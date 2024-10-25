@@ -4,6 +4,8 @@ import { IncomeCard } from "../ui/cards/IncomeCard";
 import { ExpenseCard } from "../ui/cards/ExpenseCard";
 import { BarChart } from "../ui/charts/BarChart";
 import { DoughnutChart } from "../ui/charts/DoughnutChart";
+
+import { LastRecords } from "../ui/cards/LastRecords";
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center ">
@@ -19,6 +21,9 @@ const HomePage = () => {
         <div className="flex gap-6">
           <BarChart />
           <DoughnutChart />
+        </div>
+        <div>
+          <LastRecords />
         </div>
       </div>
     </div>

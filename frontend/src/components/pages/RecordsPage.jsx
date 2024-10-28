@@ -1,3 +1,4 @@
+"use client";
 import { RecordsCard } from "../ui/cards/RecordsCard";
 import Header from "../ui/header/Header";
 

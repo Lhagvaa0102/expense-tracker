@@ -1,3 +1,4 @@
+"use client";
 import { CashCard } from "@/components/ui/cards/CashCard";
 import Header from "@/components/ui/header/Header";
 import { IncomeCard } from "../ui/cards/IncomeCard";

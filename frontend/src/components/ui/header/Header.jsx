@@ -18,10 +18,10 @@ const Header = () => {
       </div>
       <div className="flex gap-6 items-center">
         <button
-          className="btn btn-sm bg-[#0166FF] rounded-xl text-[#FFFFFF] pl-3 pr-3 "
+          className="btn btn-sm bg-[#0166FF] rounded-3xl text-[#FFFFFF] pl-3 pr-3 "
           onClick={() => document.getElementById("my_modal_2").showModal()}
         >
-          + Add Records
+          + Record
         </button>
         <dialog id="my_modal_2" className="modal">
           <AddRecords />

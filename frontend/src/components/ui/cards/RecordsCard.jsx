@@ -1,11 +1,23 @@
+import { AddRecords } from "./AddRecord";
+
 export const RecordsCard = () => {
   return (
     <div className="w-[290px] h-[800px] bg-[#FFFFFF] rounded-xl flex items-start pt-6 pb-6 pl-4 pr-4">
       <div className="flex flex-col gap-6">
         <p className="font-semibold text-2xl">Records</p>
-        <button className="btn btn-wide rounded-[20px] text-[#FFFFFF] bg-[#0166FF] btn-sm">
+
+        <button
+          className="btn btn-sm btn-wide bg-[#0166FF] rounded-3xl text-[#FFFFFF] pl-3 pr-3 "
+          onClick={() => document.getElementById("my_modal_2").showModal()}
+        >
           + Add
         </button>
+        <dialog id="my_modal_2" className="modal">
+          <AddRecords />
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
         <input
           className="rounded-lg border pl-4 pt-1 pb-1 bg-[#F3F4F6]"
           type="text"
